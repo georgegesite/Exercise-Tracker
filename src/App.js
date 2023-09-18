@@ -13,7 +13,6 @@ function App() {
     <Router>
       <div className="container">
         <Navbar />
-        
         <Routes>
           <Route path="/" element={<ExercisesList />} />
           <Route path="/edit/:id" element={<EditExercise />} />
