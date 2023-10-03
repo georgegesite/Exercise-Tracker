@@ -32,12 +32,12 @@ export default function ExercisesList() {
       });
   }, []);
 
-  const deleteExercise = (id) => {
-    axios.delete('http://localhost:4000/exercises/' + id).then((response) => {
-      console.log(response.data);
-      setExercises((prevExercises) => prevExercises.filter((el) => el._id !== id));
-    });
-  };
+    const deleteExercise = (id) => {
+      axios.delete('http://localhost:4000/exercises/' + id).then((response) => {
+        console.log(response.data);
+        setExercises((prevExercises) => prevExercises.filter((el) => el._id !== id));
+      });
+    };
 
   return (
     <div>
